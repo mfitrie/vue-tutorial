@@ -29,7 +29,7 @@ export default {
     },
     methods:{
         onSubmit(e){
-            e.preventDefault()
+            e.preventDefault();
 
             if(!this.text){
                 alert('Please add a task');
@@ -37,7 +37,7 @@ export default {
             }
 
             const newTask ={
-                id: Math.floor(Math.random()*100000),
+                // id: Math.floor(Math.random()*100000),
                 text: this.text,
                 day: this.day,
                 reminder: this.reminder
